@@ -5,51 +5,13 @@
         <title>one hansome man</title>
         <style>
             body {
-                text-align:left;
+                text-align:center;
                 background-color: rgb(255,255,255);
                 color: black;
             }
-            #tt {
-                text-align: center;
-                color: rgb(255,255, 255);
-                font-size: xx-large;
-                border: 5px dashed white;
-            }
-            .qq {
-                color: red;
-            }
-            .wx {
-                color: blue;
-            }
-            .aihao {
-                font-family: cursive;
-                font-size: larger;
-            }
-            #aihao {
-                /* text-align: right; */
-                font-family: serif;
-                font-weight: bold;
-            }
-            .pensonal {
-                font-family: cursive;
-                font-size: larger;
-            }
-            #pensonal {
-                /* text-align: right; */
-                font-family: serif;
-                font-weight: bold;
-            }
-            #fensi {
-                font-style:oblique;
-            }
-            .photo {
-                margin-left:auto;
-                border: 10px ridge red;
-                
-            }
             .header {                
                 background-image: url('b.jpg');                
-                text-align: center;
+                text-align: left;
                 min-height: 400px;
                 position: relative;
             }
@@ -66,10 +28,13 @@
                 padding: 10px;
                 /* border: 2px solid red; */
             }
+            .column {
+                margin-left:  10%;
+                margin-right: 10%;
+            }
             .first-column {
                 position: relative;
                 min-height: 400px;
-                text-align: left;
             }
             .first-column h2{            
                 position: absolute;
@@ -90,10 +55,45 @@
             .first-column p{            
                 position: absolute;
                 top: 40%;
-                /* transform: translate(-50%, -50%); */
                 color: gray;
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 line-height: 1.5;
+                text-align: left;
+            }
+            .second-column {
+                position: relative;
+                min-height: 400px;
+                text-align: left;
+            }
+            .image-first {
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                margin: 5%;
+                border: 5px ridge gray;
+            }
+            .second-column div {
+                position: absolute;
+                top: 5%;
+                width: 50%;
+                height: 80%;
+                border: 2px ridge gray;
+                overflow: auto;
+            }
+            .third-column{
+                min-height: 400px;
+                border: 2px ridge gray;
+                
+            }
+            .footer {
+                background-color: gray;
+                min-height: 100px;
+                margin-top: 20px;
+                text-align: left;
+            }
+            .footer p {
+                font-size: 25px;
+                margin: 10px;
             }
         </style>
     </head>
@@ -116,96 +116,65 @@
             </div>
 
             <div class="second-column">
-
-
+                <img class="image-first" src="a.jpg" alt="错误" width="200">
+                <div>
+                    <h3>爱好:</h3>
+                    <ul>
+                        <li>
+                            运动：喜欢各种运动，比如足球、篮球、游泳、瑜伽、跑步等。
+                        </li>
+                        <li>
+                            音乐：对音乐感兴趣，可能是演奏乐器、欣赏不同类型的音乐、参加音乐会等
+                        </li>
+                        <li>
+                            艺术：喜欢绘画、雕塑、摄影等艺术形式
+                        </li>
+                        <li>
+                            观看爱情动作大片
+                        </li>
+                    </ul>
+                    <h3 class="pensonal">个人简介:</h3>
+                    <p class="pensonal" id="pensonal" style="padding-left: 10%;">明明可以靠颜值，<br>却偏要靠实力的，<br>才华美貌智慧集一身的奇男子</p>
+                </div>
             </div>
 
-            <div class="third-column">
-
-
+            <div class="third-column" class="first-column">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>粉丝名</th>
+                            <th>开粉时间</th>
+                            <th>贡献值</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ikun-first</td>
+                            <td>two-half</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>ikun-sencond</td>
+                            <td>two-half</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>inuo-first</td>
+                            <td>0000</td>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 class="qq" >QQ：2363486303</h2>
+                <h2 class="wx">wx：lllw15007667811</h2>
+                <h2 id="fensi">诺总诺总勇敢飞，糯米粉会永相随</h2>
             </div>
 
         </div>
-        
-        
-        
-        <h2><strong>新兴彭于晏！</strong> <a href="#aihao"> 爱好 </a> <a href="#pensonal"> 个人简介 </a>
-        <a href="#fensi"> 粉丝榜单 </a></h2>
-        <img class="photo" src="a.jpg" alt="错误" width="200">
-        <h2 class="qq">彭于晏QQ：2363486303</h2>
-        <h2 class="wx">彭于晏wx：lllw15007667811</h2>
-        <h2 class="aihao" id="aihao">爱好</h2>
-        <ul class="aihao">
-            <li>
-                运动：喜欢各种运动，比如足球、篮球、游泳、瑜伽、跑步等。
-            </li>
-            <li>
-                音乐：对音乐感兴趣，可能是演奏乐器、欣赏不同类型的音乐、参加音乐会等
-            </li>
-            <li>
-                艺术：喜欢绘画、雕塑、摄影等艺术形式
-            </li>
-            <li>
-                观看爱情动作大片
-            </li>
-        </ul>
-        <h2 class="pensonal" id="pensonal">个人简介</h2>
-        <p class="pensonal">明明可以靠颜值，<br>却偏要靠实力的，<br>才华美貌智慧集一身的奇男子</p>
-        <h2 id="fensi">诺总诺总勇敢飞，糯米粉会永相随</h2>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>
-                        粉丝名
-                    </th>
-                    <th>
-                        开粉时间
-                    </th>
-                    <th>
-                        贡献值
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        ikun-first
-                    </td>
-                    <td>
-                        two-half
-                    </td>
-                    <td>
-                        50
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        ikun-sencond
-                    </td>
-                    <td>
-                        two-half
-                    </td>
-                    <td>
-                        50
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        inuo-first
-                    </td>
-                    <td>
-                        0000
-                    </td>
-                    <td>
-                        100
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <p><a href="https://mobile.yangkeduo.com/goods1.html?goods_id=494956551235&page_from=23&pxq_secret_key=WUGSJ2O4ORSIND3MXIAJPXYHUPV7SLASN7O4FOOZ3IYM55LNXIDQ&share_uin=IHLAPNQDTF2CUAH5PMFMFHHSXY_GEXDA&refer_share_id=d7c8a548e0d8478aa930ff80d8189aee&refer_share_uin=IHLAPNQDTF2CUAH5PMFMFHHSXY_GEXDA&refer_share_channel=copy_link&refer_share_form=text">代言商品</a></p>
-        
+        <div class="footer">
+            <p><a href="https://mobile.yangkeduo.com/goods1.html?goods_id=494956551235&page_from=23&pxq_secret_key=WUGSJ2O4ORSIND3MXIAJPXYHUPV7SLASN7O4FOOZ3IYM55LNXIDQ&share_uin=IHLAPNQDTF2CUAH5PMFMFHHSXY_GEXDA&refer_share_id=d7c8a548e0d8478aa930ff80d8189aee&refer_share_uin=IHLAPNQDTF2CUAH5PMFMFHHSXY_GEXDA&refer_share_channel=copy_link&refer_share_form=text">代言商品</a></p>
+        </div>
     
     </body>
 </html>
