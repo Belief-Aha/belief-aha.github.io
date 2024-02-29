@@ -6,12 +6,14 @@
         <style>
             body {
                 text-align:left;
-                background-color: rgb(79, 156, 224);
+                background-color: rgb(255,255,255);
+                color: black;
             }
             #tt {
                 text-align: center;
-                color: rgb(219, 24, 144);
+                color: rgb(255,255, 255);
                 font-size: xx-large;
+                border: 5px dashed white;
             }
             .qq {
                 color: red;
@@ -20,22 +22,120 @@
                 color: blue;
             }
             .aihao {
+                font-family: cursive;
+                font-size: larger;
+            }
+            #aihao {
                 /* text-align: right; */
+                font-family: serif;
+                font-weight: bold;
             }
             .pensonal {
+                font-family: cursive;
+                font-size: larger;
+            }
+            #pensonal {
                 /* text-align: right; */
+                font-family: serif;
+                font-weight: bold;
+            }
+            #fensi {
+                font-style:oblique;
+            }
+            .photo {
+                margin-left:auto;
+                border: 10px ridge red;
+                
+            }
+            .header {                
+                background-image: url('a.jpg');                
+                text-align: center;
+                min-height: 400px;
+                position: relative;
+            }
+            .header h1{
+                font-size: 25px;
+                font-family:'Courier New', Courier, monospace;
+                color: white;
+                background-color: rgba(40, 40, 40, 0.817);
+                letter-spacing: 4px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 10px;
+                /* border: 2px solid red; */
+            }
+            .first-column {
+                position: relative;
+                min-height: 400px;
+                text-align: left;
+            }
+            .first-column h2{            
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: gray;
+                /* letter-spacing: 2px; */
+            }
+            .first-column h4{            
+                position: absolute;
+                top: 32%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: gray;
+                font-style: italic;
+            }
+            .first-column p{            
+                position: absolute;
+                top: 40%;
+                /* transform: translate(-50%, -50%); */
+                color: gray;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                line-height: 1.5;
             }
         </style>
     </head>
     <body>
-        <h1 id="tt"><strong>诺总全球官方粉丝后援会</strong></h1>
-        <h1><strong>新兴彭于晏！</strong> <a href="#aihao"> 爱好 </a> <a href="#pensonal"> 个人简介 </a>
-        <a href="#fensi"> 粉丝榜单 </a></h1>
-        <img src="a.jpg" alt="错误" width="200">
+        
+        <div class="header">
+            <h1>诺总全球官方粉丝后援会</h1>
+        </div>
+        
+        <div class="column">
+            <div class="first-column">
+                <h2 class="title">ABOUT ME</h2>
+                <h4>新兴彭于晏</h4>
+                <p>
+                    As a idol, my entertainment journey has been filled with dreams and dedication. From the beginning, I held a deep love for the stage, aiming to create stories that resonate with audiences.
+                    My autobiography is a testament to the challenges and triumphs shaping my identity. In my childhood, the allure of the spotlight guided me toward realizing my aspirations. Despite hurdles on the road to fame, each challenge forged resilience within me.
+                    At the peak of success, I remain grounded, aware of the profound impact an idol holds in fans' hearts. This awareness drives my pursuit of artistic excellence and active involvement in philanthropy.
+                    This autobiography isn't just a personal story but a shared chronicle with supporters who've accompanied me. To each fan, your support is my inspiration.
+                </p>
+            </div>
+
+            <div class="second-column">
+
+
+            </div>
+
+            <div class="third-column">
+
+
+            </div>
+
+        </div>
+        
+        
+        
+        <h2><strong>新兴彭于晏！</strong> <a href="#aihao"> 爱好 </a> <a href="#pensonal"> 个人简介 </a>
+        <a href="#fensi"> 粉丝榜单 </a></h2>
+        <img class="photo" src="C:\Users\黄林涛\Desktop\微信图片_20240227154107.jpg" alt="错误" width="200">
         <h2 class="qq">彭于晏QQ：2363486303</h2>
         <h2 class="wx">彭于晏wx：lllw15007667811</h2>
-        <h2 class="aihao" id="aihao">爱好
-        <ul>
+        <h2 class="aihao" id="aihao">爱好</h2>
+        <ul class="aihao">
             <li>
                 运动：喜欢各种运动，比如足球、篮球、游泳、瑜伽、跑步等。
             </li>
@@ -49,7 +149,6 @@
                 观看爱情动作大片
             </li>
         </ul>
-        </h2>
         <h2 class="pensonal" id="pensonal">个人简介</h2>
         <p class="pensonal">明明可以靠颜值，<br>却偏要靠实力的，<br>才华美貌智慧集一身的奇男子</p>
         <h2 id="fensi">诺总诺总勇敢飞，糯米粉会永相随</h2>
