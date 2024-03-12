@@ -95,6 +95,11 @@
                 font-size: 25px;
                 margin: 10px;
             }
+            #time {
+                font-size: 30px;
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
         </style>
     </head>
     <body>
@@ -178,5 +183,12 @@
         </div>
     
     </body>
+    <script>
+        var timeEl = document.getElementById("time");
+        var timefc = function() {
+            timeEl.textContent = parseFloat(timeEl.textContent) + 1;
+        }
+        window.setInterval(timefc,1000);
+    </script>
 </html>
 
