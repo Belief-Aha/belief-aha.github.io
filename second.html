@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>照片墙</title>
+	<link rel="stylesheet" type="text/css" href="picwall.css">
+	 <style type="text/css">
+	 	body{
+	width: 80%;
+	height: 500px;
+	margin: 0 auto;
+}
+h5{
+	text-align: center;
+}
+div{
+	width: 100%;
+	height: 500px;
+	background: url("1.jpg")  100%/100% ;
+	position: relative;
+	border: solid 1px blue;
+	overflow: hidden;
+}
+.img{
+	position: absolute;
+	padding: 2px 2px 3px 2px;
+	width: 30%;
+	background-color: white;
+	transition: all 1.5s ease;
+	z-index: 0;
+}
+.img:hover{
+	transform: rotate(0deg) scale(1.8);
+	z-index: 1;
+}
+.img1{
+	left:130px;
+	top:80px;
+	transform: rotate(20deg);
+}
+.img2{
+	right: 150px;
+	top:100px;
+	transform: rotate(-10deg);
+}
+.img3{
+	left: 140px;
+	top: 180px;
+	transform: rotate(-8deg);
+}
+.img4{
+	right: 37px;
+	top: 140px;
+	transform: rotate(10deg);
+	width: 20%;
+}
+.img5{
+	right: 420px;
+	top: 70px;
+	transform: rotate(-6deg);
+	width: 18%;
+	padding: 10px 0px 10px 0px;
+}
+.img6{
+	right: 150px;
+	top: 280px;
+	transform: rotate(8deg);
+}
+.img7{
+	left: 250px;
+	top: 260px;
+	transform: rotate(-15deg);
+}
+	 </style>
+</head>
+<body>
+	<h5>绚丽的照片墙</h5>
+	<div>
+		<img src="1.jpg " class="img img1">
+		<img src="abc.jpg" class="img img2">
+		<img src="abd.jpg" class="img img3">
+		<img src="bailu1.jpg" class="img img4">
+		<img src="bailu2.jpg" class="img img5">
+		<img src="xiao.jpg" class="img img6">
+		<img src="2.jpg" class="img img7">
+	</div>
+</body>
+</html>

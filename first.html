@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>one hansome man</title>
+        <style>
+            body {
+                text-align:center;
+                background-color: rgb(255,255,255);
+                color: black;
+            }
+            /* }
+           #tt {
+                text-align: center;
+                color: rgb(255,255, 255);
+                font-size: xx-large;
+                border: 5px dashed white;
+            }
+            .qq {
+                color: red;
+            }
+            .wx {
+                color: blue;
+            }
+            .aihao {
+                font-family: cursive;
+                font-size: larger;
+            }
+            #aihao {
+                font-family: serif;
+                font-weight: bold;
+            }
+            .pensonal {
+                font-family: cursive;
+                font-size: larger;
+            }
+            #pensonal {
+                font-family: serif;
+                font-weight: bold;
+            }
+            #fensi {
+                font-style:oblique;
+            }
+            .photo {
+                margin-left:auto;
+                border: 10px ridge red;
+                
+            } */
+            .header {                
+                background-image: url('file:///C:/Users/黄林涛/Desktop/微信图片_20240227154107.jpg');                
+                text-align: left;
+                min-height: 400px;
+                position: relative;
+            }
+            .header h1{
+                font-size: 25px;
+                font-family:'Courier New', Courier, monospace;
+                color: white;
+                background-color: rgba(40, 40, 40, 0.817);
+                letter-spacing: 4px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 10px;
+                /* border: 2px solid red; */
+            }
+            h1:hover {
+                color: red;
+            }
+            .column {
+                margin-left:  10%;
+                margin-right: 10%;
+            }
+            .first-column {
+                position: relative;
+                min-height: 400px;
+            }
+            .first-column h2{            
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: gray;
+                /* letter-spacing: 2px; */
+            }
+            .first-column h4{            
+                position: absolute;
+                top: 32%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: gray;
+                font-style: italic;
+            }
+            .first-column p{            
+                position: absolute;
+                top: 40%;
+                color: gray;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                line-height: 1.5;
+                text-align: left;
+            }
+            .second-column {
+                position: relative;
+                min-height: 400px;
+                text-align: left;
+            }
+            .image-first {
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                margin: 5%;
+                border: 5px ridge gray;
+            }
+            .second-column div {
+                position: absolute;
+                top: 5%;
+                width: 50%;
+                height: 80%;
+                border: 2px ridge gray;
+                overflow: auto;
+            }
+            .third-column{
+                min-height: 400px;
+                border: 2px ridge gray;
+                
+            }
+            .footer {
+                background-color: gray;
+                min-height: 100px;
+                margin-top: 20px;
+                text-align: left;
+            }
+            .footer p {
+                font-size: 25px;
+                margin: 10px;
+            }
+            #time {
+                font-size: 30px;
+                margin-left: 50%;
+                transform: translateX(-50%);
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="header">
+            <h1>诺总全球官方粉丝后援会</h1>
+        </div>
+        
+        <div class="column">
+            <div class="first-column">
+                <h2 class="title">ABOUT ME</h2>
+                <h4>新兴彭于晏</h4>
+                <p>
+                    As a idol, my entertainment journey has been filled with dreams and dedication. From the beginning, I held a deep love for the stage, aiming to create stories that resonate with audiences.
+                    My autobiography is a testament to the challenges and triumphs shaping my identity. In my childhood, the allure of the spotlight guided me toward realizing my aspirations. Despite hurdles on the road to fame, each challenge forged resilience within me.
+                    At the peak of success, I remain grounded, aware of the profound impact an idol holds in fans' hearts. This awareness drives my pursuit of artistic excellence and active involvement in philanthropy.
+                    This autobiography isn't just a personal story but a shared chronicle with supporters who've accompanied me. To each fan, your support is my inspiration.
+                </p>
+            </div>
+
+            <div class="second-column">
+                <img class="image-first" src="C:\Users\黄林涛\Desktop\微信图片_20240227154107.jpg" alt="错误" width="200">
+                <div>
+                    <h3>爱好:</h3>
+                    <ul>
+                        <li>
+                            运动：喜欢各种运动，比如足球、篮球、游泳、瑜伽、跑步等。
+                        </li>
+                        <li>
+                            音乐：对音乐感兴趣，可能是演奏乐器、欣赏不同类型的音乐、参加音乐会等
+                        </li>
+                        <li>
+                            艺术：喜欢绘画、雕塑、摄影等艺术形式
+                        </li>
+                        <li>
+                            观看爱情动作大片
+                        </li>
+                    </ul>
+                    <h3 class="pensonal">个人简介:</h3>
+                    <p class="pensonal" id="pensonal" style="padding-left: 10%;">明明可以靠颜值，<br>却偏要靠实力的，<br>才华美貌智慧集一身的奇男子</p>
+                </div>
+            </div>
+
+            <div class="third-column" class="first-column">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>粉丝名</th>
+                            <th>开粉时间</th>
+                            <th>贡献值</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ikun-first</td>
+                            <td>two-half</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>ikun-sencond</td>
+                            <td>two-half</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>inuo-first</td>
+                            <td>0000</td>
+                            <td>100</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 class="qq" >QQ：2363486303</h2>
+                <h2 class="wx">wx：lllw15007667811</h2>
+                <h2 id="fensi">诺总诺总勇敢飞，糯米粉会永相随</h2>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <p><a href="https://mobile.yangkeduo.com/goods1.html?goods_id=494956551235&page_from=23&pxq_secret_key=WUGSJ2O4ORSIND3MXIAJPXYHUPV7SLASN7O4FOOZ3IYM55LNXIDQ&share_uin=IHLAPNQDTF2CUAH5PMFMFHHSXY_GEXDA&refer_share_id=d7c8a548e0d8478aa930ff80d8189aee&refer_share_uin=IHLAPNQDTF2CUAH5PMFMFHHSXY_GEXDA&refer_share_channel=copy_link&refer_share_form=text">代言商品</a></p>
+            <p><a href="second.html">aaa</a></p>
+            <span id="time">0</span>
+        </div>
+    
+    </body>
+    <script>
+        var timeEl = document.getElementById("time");
+        var timefc = function() {
+            timeEl.textContent = parseFloat(timeEl.textContent) + 1;
+        }
+        window.setInterval(timefc,1000);
+    </script>
+</html>
+
